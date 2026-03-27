@@ -1,0 +1,304 @@
+/
+total 3919972
+drwxr-xr-x  23 root root       4096 Nov 10 18:29 .
+drwxr-xr-x  23 root root       4096 Nov 10 18:29 ..
+lrwxrwxrwx   1 root root          7 Apr 22  2024 bin -> usr/bin
+drwxr-xr-x   2 root root       4096 Feb 26  2024 bin.usr-is-merged
+drwxr-xr-x   3 root root       4096 Nov 10 18:29 boot
+dr-xr-xr-x   2 root root       4096 Aug  6  2025 cdrom
+drwxr-xr-x  19 root root       4260 Mar 26 14:46 dev
+drwxr-xr-x 139 root root      12288 Mar 19 15:07 etc
+drwxr-xr-x   3 root root       4096 Nov 10 18:27 home
+lrwxrwxrwx   1 root root          7 Apr 22  2024 lib -> usr/lib
+lrwxrwxrwx   1 root root          9 Apr 22  2024 lib64 -> usr/lib64
+drwxr-xr-x   2 root root       4096 Apr  8  2024 lib.usr-is-merged
+drwx------   2 root root      16384 Nov 10 18:26 lost+found
+drwxr-xr-x   2 root root       4096 Aug  5  2025 media
+drwxr-xr-x   2 root root       4096 Aug  5  2025 mnt
+drwxr-xr-x   2 root root       4096 Aug  5  2025 opt
+dr-xr-xr-x 281 root root          0 Mar 26 14:08 proc
+drwx------   5 root root       4096 Nov 10 19:40 root
+drwxr-xr-x  36 root root        920 Mar 26 14:19 run
+lrwxrwxrwx   1 root root          8 Apr 22  2024 sbin -> usr/sbin
+drwxr-xr-x   2 root root       4096 Mar 31  2024 sbin.usr-is-merged
+drwxr-xr-x  17 root root       4096 Mar 26 14:46 snap
+drwxr-xr-x   2 root root       4096 Aug  5  2025 srv
+-rw-------   1 root root 4013948928 Nov 10 18:29 swap.img
+dr-xr-xr-x  13 root root          0 Mar 26 14:08 sys
+drwxrwxrwt  18 root root       4096 Mar 26 15:32 tmp
+drwxr-xr-x  12 root root       4096 Aug  5  2025 usr
+drwxr-xr-x  14 root root       4096 Nov 10 18:27 var
+--- /etc ---
+/etc
+adduser.conf
+alsa
+alternatives
+anacrontab
+apg.conf
+apm
+apparmor
+apparmor.d
+apport
+apt
+avahi
+bash.bashrc
+bash_completion
+bash_completion.d
+bindresvport.blacklist
+binfmt.d
+bluetooth
+brlapi.key
+brltty
+brltty.conf
+ca-certificates
+ca-certificates.conf
+chatscripts
+cloud
+colord
+console-setup
+cracklib
+credstore
+credstore.encrypted
+cron.d
+cron.daily
+cron.hourly
+cron.monthly
+crontab
+cron.weekly
+cron.yearly
+cups
+cupshelpers
+dbus-1
+dconf
+debconf.conf
+debian_version
+debuginfod
+default
+deluser.conf
+depmod.d
+dhcp
+dhcpcd.conf
+dictionaries-common
+dpkg
+e2scrub.conf
+emacs
+environment
+environment.d
+ethertypes
+fonts
+fprintd.conf
+fstab
+fuse.conf
+fwupd
+gai.conf
+gdb
+gdm3
+geoclue
+ghostscript
+glvnd
+gnome
+gnome-remote-desktop
+gnutls
+gprofng.rc
+groff
+group
+group-
+grub.d
+gshadow
+gshadow-
+gss
+gtk-2.0
+gtk-3.0
+hdparm.conf
+host.conf
+hostname
+hosts
+hosts.allow
+hosts.deny
+hp
+ifplugd
+init
+init.d
+initramfs-tools
+inputrc
+insserv.conf.d
+ipp-usb
+iproute2
+issue
+issue.net
+kernel
+kerneloops.conf
+krb5.conf.d
+ldap
+ld.so.cache
+ld.so.conf
+ld.so.conf.d
+legal
+libao.conf
+libaudit.conf
+libblockdev
+libibverbs.d
+libnl-3
+libpaper.d
+locale.alias
+locale.conf
+locale.gen
+localtime
+logcheck
+login.defs
+logrotate.conf
+logrotate.d
+lsb-release
+machine-id
+magic
+magic.mime
+mailcap
+mailcap.order
+manpath.config
+mime.types
+mke2fs.conf
+ModemManager
+modprobe.d
+modules
+modules-load.d
+mtab
+nanorc
+netconfig
+netplan
+network
+networkd-dispatcher
+NetworkManager
+networks
+newt
+nftables.conf
+nsswitch.conf
+openvpn
+opt
+os-release
+PackageKit
+pam.conf
+pam.d
+papersize
+passwd
+passwd-
+pcmcia
+perl
+pki
+plymouth
+pm
+pnm2ppa.conf
+polkit-1
+ppp
+profile
+profile.d
+protocols
+pulse
+python3
+python3.12
+rc0.d
+rc1.d
+rc2.d
+rc3.d
+rc4.d
+rc5.d
+rc6.d
+rcS.d
+resolv.conf
+rmt
+rpc
+rsyslog.conf
+rsyslog.d
+rygel.conf
+sane.d
+security
+selinux
+sensors3.conf
+sensors.d
+services
+sgml
+shadow
+shadow-
+shells
+skel
+snmp
+speech-dispatcher
+ssh
+ssl
+sssd
+subgid
+subgid-
+subuid
+subuid-
+sudo.conf
+sudoers
+sudoers.d
+sudo_logsrvd.conf
+supercat
+sysctl.conf
+sysctl.d
+sysstat
+systemd
+terminfo
+thermald
+timezone
+tmpfiles.d
+ubuntu-advantage
+ucf.conf
+udev
+udisks2
+ufw
+update-manager
+update-motd.d
+update-notifier
+UPower
+usb_modeswitch.conf
+usb_modeswitch.d
+vconsole.conf
+vim
+vtrgb
+vulkan
+wgetrc
+wpa_supplicant
+X11
+xattr.conf
+xdg
+xml
+zsh_command_not_found
+--- /var ---
+/var
+backups
+cache
+crash
+lib
+local
+lock
+log
+mail
+metrics
+opt
+run
+snap
+spool
+tmp
+--- /home ---
+/home
+server
+--- /tmp ---
+/tmp
+6fe768fefd54de5b47b545b78a873050-{87A94AB0-E370-4cde-98D3-ACC110C5967D}
+eBo1KxsgIUSbFAxkN37kziGI-TD-webview-7261
+eBo1KxsgIUSbFAxkN37kziGI-TD-webview-7269
+snap-private-tmp
+systemd-private-ec7b4075ed284dcb8667136c3708f3ad-colord.service-Qi3dne
+systemd-private-ec7b4075ed284dcb8667136c3708f3ad-fwupd.service-hGLQwl
+systemd-private-ec7b4075ed284dcb8667136c3708f3ad-ModemManager.service-BAaHiZ
+systemd-private-ec7b4075ed284dcb8667136c3708f3ad-polkit.service-iol8hf
+systemd-private-ec7b4075ed284dcb8667136c3708f3ad-power-profiles-daemon.service-xOyQjO
+systemd-private-ec7b4075ed284dcb8667136c3708f3ad-switcheroo-control.service-mbfHBk
+systemd-private-ec7b4075ed284dcb8667136c3708f3ad-systemd-logind.service-FNwn3g
+systemd-private-ec7b4075ed284dcb8667136c3708f3ad-systemd-oomd.service-qHc2Hh
+systemd-private-ec7b4075ed284dcb8667136c3708f3ad-systemd-resolved.service-xs3TVn
+systemd-private-ec7b4075ed284dcb8667136c3708f3ad-systemd-timesyncd.service-A42zhV
+systemd-private-ec7b4075ed284dcb8667136c3708f3ad-upower.service-7maZOi
+--- Home (~) ---
+/home/server

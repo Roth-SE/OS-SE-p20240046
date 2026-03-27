@@ -1,0 +1,250 @@
+=== Task 6: Advanced Listing & Directory Audit ===
+--- Recursive Listing (ls -R) ---
+techcorp:
+engineering
+hr
+marketing
+
+techcorp/engineering:
+backend
+devops
+frontend
+
+techcorp/engineering/backend:
+app.js
+database.sql
+pipeline_backup.txt
+server_config.txt
+task4_navigation_paths.txt
+
+techcorp/engineering/devops:
+docker-compose.yml
+Dockerfile
+pipeline.txt
+security_audit.txt
+server_notice.txt
+
+techcorp/engineering/frontend:
+frontend_config.txt
+index.html
+styles.css
+
+techcorp/hr:
+onboarding
+policies
+
+techcorp/hr/onboarding:
+checklist.txt
+handbook.txt
+leave_policy.txt
+welcome_guide.txt
+
+techcorp/hr/policies:
+leave_policy.txt
+remote_work.txt
+
+techcorp/marketing:
+assets
+campaigns
+
+techcorp/marketing/assets:
+banner.jpg
+brochure.pdf
+logo_brief.txt
+logo.png
+task4_navigation_paths.txt
+
+techcorp/marketing/campaigns:
+q1_2026_launch.txt
+social_media.txt
+
+--- Sort by Size: engineering/ (ls -ls) ---
+total 4
+4 -rw-rw-r-- 1 server server 26 Mar 26 15:46 frontend_config.txt
+0 -rw-rw-r-- 1 server server  0 Mar 26 15:46 index.html
+0 -rw-rw-r-- 1 server server  0 Mar 26 15:46 styles.css
+total 12
+0 -rw-rw-r-- 1 server server  0 Mar 26 15:46 app.js
+0 -rw-rw-r-- 1 server server  0 Mar 26 15:46 database.sql
+4 -rw-rw-r-- 1 server server 29 Mar 26 16:33 pipeline_backup.txt
+4 -rw-rw-r-- 1 server server 29 Mar 26 15:46 server_config.txt
+4 -rw-rw-r-- 1 server server 80 Mar 26 16:03 task4_navigation_paths.txt
+total 12
+0 -rw-rw-r-- 1 server server  0 Mar 26 15:46 docker-compose.yml
+0 -rw-rw-r-- 1 server server  0 Mar 26 15:46 Dockerfile
+4 -rw-rw-r-- 1 server server 29 Mar 26 15:46 pipeline.txt
+4 -rw-rw-r-- 1 server server 34 Mar 26 16:33 security_audit.txt
+4 -rw-rw-r-- 1 server server 48 Mar 26 16:29 server_notice.txt
+
+--- Sort by Time: techcorp/ (ls -lt) ---
+total 8
+-rw-rw-r-- 1 server server 39 Mar 26 15:46 leave_policy.txt
+-rw-rw-r-- 1 server server 32 Mar 26 15:46 remote_work.txt
+total 12
+-rw-rw-r-- 1 server server 39 Mar 26 16:30 leave_policy.txt
+-rw-rw-r-- 1 server server 23 Mar 26 16:29 handbook.txt
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 checklist.txt
+-rw-rw-r-- 1 server server 52 Mar 26 15:46 welcome_guide.txt
+total 8
+-rw-rw-r-- 1 server server 32 Mar 26 15:46 q1_2026_launch.txt
+-rw-rw-r-- 1 server server 35 Mar 26 15:46 social_media.txt
+
+--- Human-Readable (ls -lh) ---
+total 8.0K
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 banner.jpg
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 brochure.pdf
+-rw-rw-r-- 1 server server 22 Mar 26 16:29 logo_brief.txt
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 logo.png
+-rw-rw-r-- 1 server server 77 Mar 26 16:03 task4_navigation_paths.txt
+total 12K
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 docker-compose.yml
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 Dockerfile
+-rw-rw-r-- 1 server server 29 Mar 26 15:46 pipeline.txt
+-rw-rw-r-- 1 server server 34 Mar 26 16:33 security_audit.txt
+-rw-rw-r-- 1 server server 48 Mar 26 16:29 server_notice.txt
+
+--- Reverse Sort by Size (ls -rlS) ---
+total 12
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 database.sql
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 app.js
+-rw-rw-r-- 1 server server 29 Mar 26 15:46 server_config.txt
+-rw-rw-r-- 1 server server 29 Mar 26 16:33 pipeline_backup.txt
+-rw-rw-r-- 1 server server 80 Mar 26 16:03 task4_navigation_paths.txt
+
+--- Reverse Sort by Time (ls -rlt) ---
+total 12
+-rw-rw-r-- 1 server server 52 Mar 26 15:46 welcome_guide.txt
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 checklist.txt
+-rw-rw-r-- 1 server server 23 Mar 26 16:29 handbook.txt
+-rw-rw-r-- 1 server server 39 Mar 26 16:30 leave_policy.txt
+
+--- Combined: Recursive + Human-Readable + Sort by Size (ls -lhRS) ---
+techcorp/:
+total 12K
+drwxrwxr-x 5 server server 4.0K Mar 26 15:46 engineering
+drwxrwxr-x 4 server server 4.0K Mar 26 15:46 hr
+drwxrwxr-x 4 server server 4.0K Mar 26 16:29 marketing
+
+techcorp/engineering:
+total 12K
+drwxrwxr-x 2 server server 4.0K Mar 26 16:33 backend
+drwxrwxr-x 2 server server 4.0K Mar 26 16:33 devops
+drwxrwxr-x 2 server server 4.0K Mar 26 16:33 frontend
+
+techcorp/engineering/backend:
+total 12K
+-rw-rw-r-- 1 server server 80 Mar 26 16:03 task4_navigation_paths.txt
+-rw-rw-r-- 1 server server 29 Mar 26 16:33 pipeline_backup.txt
+-rw-rw-r-- 1 server server 29 Mar 26 15:46 server_config.txt
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 app.js
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 database.sql
+
+techcorp/engineering/devops:
+total 12K
+-rw-rw-r-- 1 server server 48 Mar 26 16:29 server_notice.txt
+-rw-rw-r-- 1 server server 34 Mar 26 16:33 security_audit.txt
+-rw-rw-r-- 1 server server 29 Mar 26 15:46 pipeline.txt
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 docker-compose.yml
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 Dockerfile
+
+techcorp/engineering/frontend:
+total 4.0K
+-rw-rw-r-- 1 server server 26 Mar 26 15:46 frontend_config.txt
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 index.html
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 styles.css
+
+techcorp/hr:
+total 8.0K
+drwxrwxr-x 2 server server 4.0K Mar 26 16:30 onboarding
+drwxrwxr-x 2 server server 4.0K Mar 26 16:33 policies
+
+techcorp/hr/onboarding:
+total 12K
+-rw-rw-r-- 1 server server 52 Mar 26 15:46 welcome_guide.txt
+-rw-rw-r-- 1 server server 39 Mar 26 16:30 leave_policy.txt
+-rw-rw-r-- 1 server server 23 Mar 26 16:29 handbook.txt
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 checklist.txt
+
+techcorp/hr/policies:
+total 8.0K
+-rw-rw-r-- 1 server server 39 Mar 26 15:46 leave_policy.txt
+-rw-rw-r-- 1 server server 32 Mar 26 15:46 remote_work.txt
+
+techcorp/marketing:
+total 8.0K
+drwxrwxr-x 2 server server 4.0K Mar 26 16:29 assets
+drwxrwxr-x 2 server server 4.0K Mar 26 16:33 campaigns
+
+techcorp/marketing/assets:
+total 8.0K
+-rw-rw-r-- 1 server server 77 Mar 26 16:03 task4_navigation_paths.txt
+-rw-rw-r-- 1 server server 22 Mar 26 16:29 logo_brief.txt
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 banner.jpg
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 brochure.pdf
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 logo.png
+
+techcorp/marketing/campaigns:
+total 8.0K
+-rw-rw-r-- 1 server server 35 Mar 26 15:46 social_media.txt
+-rw-rw-r-- 1 server server 32 Mar 26 15:46 q1_2026_launch.txt
+
+--- Challenge Investigation ---
+total 12
+-rw-rw-r-- 1 server server 39 Mar 26 16:30 leave_policy.txt
+-rw-rw-r-- 1 server server 23 Mar 26 16:29 handbook.txt
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 checklist.txt
+-rw-rw-r-- 1 server server 52 Mar 26 15:46 welcome_guide.txt
+techcorp/marketing/:
+total 8.0K
+drwxrwxr-x 2 server server 4.0K Mar 26 16:29 assets
+drwxrwxr-x 2 server server 4.0K Mar 26 16:33 campaigns
+
+techcorp/marketing/assets:
+total 8.0K
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 banner.jpg
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 brochure.pdf
+-rw-rw-r-- 1 server server 22 Mar 26 16:29 logo_brief.txt
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 logo.png
+-rw-rw-r-- 1 server server 77 Mar 26 16:03 task4_navigation_paths.txt
+
+techcorp/marketing/campaigns:
+total 8.0K
+-rw-rw-r-- 1 server server 32 Mar 26 15:46 q1_2026_launch.txt
+-rw-rw-r-- 1 server server 35 Mar 26 15:46 social_media.txt
+total 12
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 Dockerfile
+-rw-rw-r-- 1 server server  0 Mar 26 15:46 docker-compose.yml
+-rw-rw-r-- 1 server server 29 Mar 26 15:46 pipeline.txt
+-rw-rw-r-- 1 server server 34 Mar 26 16:33 security_audit.txt
+-rw-rw-r-- 1 server server 48 Mar 26 16:29 server_notice.txt
+total 117M
+-rw-rw-r--  1 server server 117M Mar 18 03:58 vscode.deb
+-rw-------  1 server server 5.4K Mar 24 16:51 .bash_history
+drwxr-x--- 20 server server 4.0K Mar 26 16:36 .
+drwxr-xr-x  3 root   root   4.0K Nov 10 18:27 ..
+drwx------ 18 server server 4.0K Mar 24 16:28 .cache
+drwx------ 18 server server 4.0K Mar 24 16:45 .config
+drwx------  3 server server 4.0K Mar 19 14:16 .copilot
+drwxr-xr-x  2 server server 4.0K Nov 10 18:27 Desktop
+drwxr-xr-x  2 server server 4.0K Mar 26 16:36 Documents
+drwxr-xr-x  4 server server 4.0K Mar 26 15:32 Downloads
+drwx------  2 server server 4.0K Mar 19 14:15 .gnupg
+drwx------  4 server server 4.0K Nov 10 18:27 .local
+drwxr-xr-x  2 server server 4.0K Nov 10 18:27 Music
+drwxrwxr-x  5 server server 4.0K Mar 26 16:36 os-se-p20240046
+drwxr-xr-x  3 server server 4.0K Mar 17 14:17 Pictures
+drwx------  3 server server 4.0K Mar 19 14:00 .pki
+drwxr-xr-x  2 server server 4.0K Nov 10 18:27 Public
+drwx------  7 server server 4.0K Mar 19 14:00 snap
+drwx------  2 server server 4.0K Mar 12 17:13 .ssh
+drwxr-xr-x  2 server server 4.0K Nov 10 18:27 Templates
+drwxr-xr-x  2 server server 4.0K Nov 10 18:27 Videos
+drwxrwxr-x  4 server server 4.0K Mar 19 14:00 .vscode
+-rw-r--r--  1 server server 3.7K Mar 31  2024 .bashrc
+-rw-r--r--  1 server server  807 Mar 31  2024 .profile
+-rw-r--r--  1 server server  220 Mar 31  2024 .bash_logout
+-rw-rw-r--  1 server server  183 Mar 19 13:57 .wget-hsts
+-rw-rw-r--  1 server server   54 Mar 12 16:49 .gitconfig
+-rw-------  1 server server   20 Mar 12 17:10 .lesshst
+-rw-rw-r--  1 server server    0 Mar 26 15:38 os-se-
+-rw-r--r--  1 server server    0 Nov 10 18:35 .sudo_as_admin_successful
