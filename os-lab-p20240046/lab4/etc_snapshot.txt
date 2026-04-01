@@ -1,0 +1,20 @@
+total 1172
+drwxr-xr-x 139 root                 root                 12288 Mar 30 14:20 .
+drwxr-xr-x  23 root                 root                  4096 Nov 10 18:29 ..
+-rw-r--r--   1 root                 root                  3444 Jul  6  2023 adduser.conf
+drwxr-xr-x   3 root                 root                  4096 Aug  5  2025 alsa
+drwxr-xr-x   2 root                 root                  4096 Mar 19 15:07 alternatives
+-rw-r--r--   1 root                 root                   335 Apr  8  2024 anacrontab
+-rw-r--r--   1 root                 root                   433 Apr  8  2024 apg.conf
+drwxr-xr-x   5 root                 root                  4096 Aug  5  2025 apm
+drwxr-xr-x   2 root                 root                  4096 Aug  5  2025 apparmor
+drwxr-xr-x   9 root                 root                  4096 Nov 10 19:48 apparmor.d
+drwxr-xr-x   3 root                 root                  4096 Aug  5  2025 apport
+drwxr-xr-x   9 root                 root                  4096 Nov 10 18:26 apt
+drwxr-xr-x   3 root                 root                  4096 Aug  5  2025 avahi
+-rw-r--r--   1 root                 root                  2319 Mar 31  2024 bash.bashrc
+-rw-r--r--   1 root                 root                    45 Jan 25  2020 bash_completion
+drwxr-xr-x   2 root                 root                  4096 Mar 12 16:40 bash_completion.d
+-rw-r--r--   1 root                 root                   367 Aug  2  2022 bindresvport.blacklist
+drwxr-xr-x   2 root                 root                  4096 Apr 19  2024 binfmt.d
+drwxr-xr-x   2 root                 root                  4096 Aug  5  2025 bluetooth
