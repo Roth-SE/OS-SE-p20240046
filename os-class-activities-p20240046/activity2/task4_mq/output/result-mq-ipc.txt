@@ -1,0 +1,3 @@
+Receiver: message received from queue '/queue-phengroth'
+Receiver: message = "Hello from sender! This is message queue IPC."
+Receiver: queue unlinked.

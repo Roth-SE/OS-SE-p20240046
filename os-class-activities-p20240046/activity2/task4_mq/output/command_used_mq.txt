@@ -1,0 +1,20 @@
+  451  ./"shm-producer"
+  452  cd "/home/server/os-se-p20240046/os-class-activities-p20240046/activity2/task3_shm/output"
+  453  ./"shm-consumer"
+  454  gcc -o shm-producer shm-producer.c -lrt'
+  455  gcc -o shm-producer shm-producer.c -lrt
+  456  ./shm-producer
+  457  ./shm-consumer > result-shm-ipc.txt
+  458  cat result-shm-ipc.txt
+  459  cd activity2/task4_mq
+  460  cd ..
+  461  cd activity2/task4_mq
+  462  cd task4_mq
+  463  cd "/home/server/os-se-p20240046/os-class-activities-p20240046/activity2/task4_mq/output"
+  464  ./"receiver"
+  465  cd "/home/server/os-se-p20240046/os-class-activities-p20240046/activity2/task4_mq/output"
+  466  ./"sender"
+  467  ./sender
+  468  ./receiver > result-mq-ipc.txt
+  469  cat result-mq-ipc.txt
+  470  history | tail -n 20 > command_used_mq.txt

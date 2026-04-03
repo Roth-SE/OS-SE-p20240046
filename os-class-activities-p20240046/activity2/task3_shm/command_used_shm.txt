@@ -1,0 +1,20 @@
+  437  git add .
+  438  git status
+  439  git commit pm " lastest commit"
+  440  git commit -m " lastest commit"
+  441  git push origin master
+  442  ssh ssh2.rathpisey.site 
+  443  cd os-se-p20240046
+  444  git add .
+  445  git commit -m "lastest commited"
+  446  git push origin master 
+  447  ssh ssh2.rathpisey.site 
+  448  git pull
+  449  cd activity2/task3_shm
+  450  cd task3_shm
+  451  gcc -o shm-producer shm-producer.c -lrt
+  452  gcc -o shm-consumer shm-consumer.c -lrt
+  453  ./shm-producer
+  454  ./shm-consumer > result-shm-ipc.txt
+  455  cat result-shm-ipc.txt
+  456  history | tail -n 20 > command_used_shm.txt
