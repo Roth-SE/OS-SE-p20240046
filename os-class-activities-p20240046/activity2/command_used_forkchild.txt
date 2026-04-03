@@ -1,0 +1,20 @@
+  434  ssh se-suon-caro@ssh2.rathpisey.site 
+  435  ssh se-song-phengroth@ssh2.rathpisey.site 
+  436  cd os-se-p20240046/
+  437  git add .
+  438  git status
+  439  git commit pm " lastest commit"
+  440  git commit -m " lastest commit"
+  441  git push origin master
+  442  ssh ssh2.rathpisey.site 
+  443  cd os-se-p20240046
+  444  git add .
+  445  git commit -m "lastest commited"
+  446  git push origin master 
+  447  ssh ssh2.rathpisey.site 
+  448  cd activity2/task1
+  449  ./forkchild > result_forkchild.txt 2>&1
+  450  cat result_forkchild.txt
+  451  ps -ef --forest | grep forkchild
+  452  htop
+  453  history | tail -n 20 > command_used_forkchild.txt
