@@ -1,0 +1,20 @@
+  531  cd /home/server/os-se-p20240046/os-class-activities-p20240046/activity3/task2_threads
+  532  $ gcc -o threads threads.c -pthread
+  533  cd "/home/server/os-se-p20240046/os-class-activities-p20240046/activity3/task2_threads/output"
+  534  ./"threads"
+  535  $ gcc -o threads threads.c -pthread
+  536  cd ..
+  537  gcc -o threads threads.c -pthread
+  538  ./threads > result_threads.txt 2>&1
+  539  $ cat result_threads.txt
+  540  cat result_threads.txt
+  541  touch threads_mutex.c
+  542  cd "/home/server/os-se-p20240046/os-class-activities-p20240046/activity3/task2_threads/output"
+  543  ./"threads_mutex"
+  544  cd ..
+  545  gcc -o threads_mutex threads_mutex.c -pthread
+  546  $ ./threads_mutex > result_threads_mutex.txt 2>&1
+  547  $ cat result_threads_mutex.txt
+  548  ./threads_mutex > result_threads_mutex.txt 2>&1
+  549  cat result_threads_mutex.txt
+  550  history | tail -n 20 > command_used_threads.txt

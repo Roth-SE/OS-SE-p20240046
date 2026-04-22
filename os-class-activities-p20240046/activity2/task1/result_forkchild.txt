@@ -1,1 +1,5 @@
-bash: ./forkchild: No such file or directory
+Parent process (PID: 7608) — creating child...
+Parent: waiting for child (PID: 7609) to finish...
+Child process (PID: 7609, Parent PID: 7608)
+Child: sleeping 30s — observe the process tree now!
+tree

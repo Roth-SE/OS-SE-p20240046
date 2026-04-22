@@ -1,0 +1,20 @@
+  514  sudo apt upgrade
+  515  sudo reboot
+  516  cd activity3/task1_socket
+  517  cd task1_socket
+  518  mkdir server.c
+  519  gcc -o server server.c
+  520  $ gcc -o server server.c
+  521  $ gcc -o client client.c
+  522  gcc -o server server.c
+  523  $ gcc -o client client.c
+  524  [200~$ ./server > result_server.txt 2>&1 &
+  525  $ sleep 1
+  526  $ ./client > result_client.txt 2>&1
+  527  $ wait
+  528  $ ./server > result_server.txt 2>&1 &
+  529  $ sleep 1
+  530  $ ./client > result_client.txt 2>&1
+  531  $ wait
+  532  $ cat result_server.txt result_client.txt > result_socket.txt
+  533  history | tail -n 20 > command_used_socket.txt

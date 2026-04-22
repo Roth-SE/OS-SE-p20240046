@@ -1,0 +1,18 @@
+server     23800    9583   23800  0    5 23:29 pts/0    00:00:00 ./threads_observe
+server     23800    9583   23802  0    5 23:29 pts/0    00:00:00 ./threads_observe
+server     23800    9583   23803  0    5 23:29 pts/0    00:00:00 ./threads_observe
+server     23800    9583   23804  0    5 23:29 pts/0    00:00:00 ./threads_observe
+server     23800    9583   23805  0    5 23:29 pts/0    00:00:00 ./threads_observe
+server     23904   20836   23904  0    1 23:30 pts/9    00:00:00 grep --color=auto threads_observe
+    PID    SPID TTY          TIME CMD
+  23800   23800 pts/0    00:00:00 threads_observe
+  23800   23802 pts/0    00:00:00 threads_observe
+  23800   23803 pts/0    00:00:00 threads_observe
+  23800   23804 pts/0    00:00:00 threads_observe
+  23800   23805 pts/0    00:00:00 threads_observe
+--- /proc/23800/task/ listing ---
+23800
+23802
+23803
+23804
+23805
