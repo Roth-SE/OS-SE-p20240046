@@ -88,8 +88,6 @@ drwxr-xr-x 139 root root 12288 Apr  6 15:52 ..
 -rwxr-xr-x   1 root root   214 Mar 17  2025 40_custom
 -rwxr-xr-x   1 root root   215 Mar 17  2025 41_custom
 -rw-r--r--   1 root root   483 Mar 17  2025 README
-<<<<<<< HEAD
-=======
 
 === Part B: GRUB Customization ===
 --- Modified /etc/default/grub ---
@@ -206,4 +204,3 @@ GRUB_COLOR_HIGHLIGHT="yellow/blue"
 
 --- 3c. Find Root Partition UUID ---
   search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2  0274faf0-422e-4a44-8d5d-8100c0f3a68b
->>>>>>> c9f6f7a78856a3cab2366fe8c27eacc6fce4a780
