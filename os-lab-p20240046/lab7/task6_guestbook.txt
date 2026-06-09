@@ -1,0 +1,5 @@
+=== guestbook permissions ===
+-rw------- 1 se-song-phengroth se-song-phengroth 0 Jun  2 17:35 /home/se-song-phengroth/guestbook.txt
+=== sign_book permissions ===
+-rwsr-xr-x 1 se-song-phengroth se-song-phengroth 16096 Jun  2 17:37 /home/se-song-phengroth/bin/sign_book
+=== guestbook contents ===

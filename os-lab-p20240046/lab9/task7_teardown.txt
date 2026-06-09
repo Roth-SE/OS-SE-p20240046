@@ -1,0 +1,15 @@
+=== teardown script ===
+-rwxrwxr-x 1 se-song-phengroth se-song-phengroth 334 Jun  9 14:44 /home/se-song-phengroth/bin/teardown
+=== process check ===
+se-sath+  760514  0.0  0.0   7340  3624 pts/13   S+   14:44   0:00 /bin/bash /home/se-sathya-poch/bin/sync_down
+se-sath+  760530  0.0  0.0   7340  3672 pts/12   S+   14:44   0:00 /bin/bash /home/se-sathya-poch/bin/sync_timeout
+=== final working folder ===
+/home/se-song-phengroth/os-lab-deadlock
+/home/se-song-phengroth/os-lab-deadlock/public_dr_alpha
+/home/se-song-phengroth/os-lab-deadlock/public_dr_alpha/vault.lock
+/home/se-song-phengroth/os-lab-deadlock/vault_alpha
+/home/se-song-phengroth/os-lab-deadlock/vault_alpha/README.txt
+/home/se-song-phengroth/os-lab-deadlock/vault_alpha/vault.lock
+/home/se-song-phengroth/os-lab-deadlock/vault_beta
+/home/se-song-phengroth/os-lab-deadlock/vault_beta/README.txt
+/home/se-song-phengroth/os-lab-deadlock/vault_beta/vault.lock

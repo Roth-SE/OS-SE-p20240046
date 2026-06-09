@@ -1,0 +1,4 @@
+=== inbox permissions ===
+drwx-wx-wx 2 se-song-phengroth se-song-phengroth 4096 Jun  2 14:24 /home/se-song-phengroth/public_inbox
+=== inbox files as owner ===
+total 0

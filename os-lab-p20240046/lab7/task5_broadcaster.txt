@@ -1,0 +1,6 @@
+=== broadcaster script ===
+-rwxrwxr-x 1 se-song-phengroth se-song-phengroth 331 Jun  2 14:52 /home/se-song-phengroth/bin/broadcaster
+=== outbox permissions ===
+drwxr-xr-x 2 se-song-phengroth se-song-phengroth 4096 Jun  2 14:52 /home/se-song-phengroth/public_outbox
+=== secret.txt ===
+filesystem - 2026-06-02 14:52:31

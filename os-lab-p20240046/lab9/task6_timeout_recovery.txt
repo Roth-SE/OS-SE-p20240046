@@ -1,0 +1,6 @@
+=== sync_timeout permissions ===
+-rwxrwxr-x 1 se-song-phengroth se-song-phengroth 585 Jun  9 14:41 /home/se-song-phengroth/bin/sync_timeout
+=== timeout evidence ===
+Paste the timeout error and exit status shown in your terminal.
+=== process check after stopping old script ===
+se-kiv-+  757429  0.0  0.0   6924  3960 pts/7    S+   14:39   0:00 nano /home/se-kiv-sovannlyda/bin/sync_timeout

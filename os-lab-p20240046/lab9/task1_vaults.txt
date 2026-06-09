@@ -1,0 +1,11 @@
+=== working folder ===
+/home/se-song-phengroth/os-lab-deadlock
+=== vault directories ===
+drwxrwxr-x 2 se-song-phengroth se-song-phengroth 4096 Jun  9 14:02 /home/se-song-phengroth/os-lab-deadlock/vault_alpha
+drwxrwxr-x 2 se-song-phengroth se-song-phengroth 4096 Jun  9 14:02 /home/se-song-phengroth/os-lab-deadlock/vault_beta
+=== vault lock files ===
+-rw-rw-r-- 1 se-song-phengroth se-song-phengroth 0 Jun  9 14:01 /home/se-song-phengroth/os-lab-deadlock/vault_alpha/vault.lock
+-rw-rw-r-- 1 se-song-phengroth se-song-phengroth 0 Jun  9 14:02 /home/se-song-phengroth/os-lab-deadlock/vault_beta/vault.lock
+=== vault marker files ===
+Vault Alpha local resource for p20240046
+Vault Beta local resource for p20240046
