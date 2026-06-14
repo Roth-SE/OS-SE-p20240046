@@ -1,0 +1,17 @@
+Run 1 final inventory: 86
+Run 1 result: Suspicious
+
+Run 2 final inventory: 72
+Run 2 result: Suspicious
+
+Run 3 final inventory: 88
+Run 3 result: Suspicious
+
+Run 4 final inventory: 64
+Run 4 result: Suspicious
+
+Run 5 final inventory: 78
+Run 5 result: Suspicious
+
+Explanation:
+The variations occur due to a Time-of-Check to Time-of-Use (TOC-TOU) race condition caused by the Linux OS process scheduler. Because the bots are executed concurrently in the background, multiple processes read the same initial inventory value before any of them have a chance to write their updated subtraction back to the file. As the OS rapidly switches context between these processes, they overwrite each other's progress with stale calculations, resulting in lost transactions and an incorrectly high remaining inventory.

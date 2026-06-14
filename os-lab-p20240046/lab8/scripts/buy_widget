@@ -1,0 +1,53 @@
+#!/bin/bash
+
+username="$1"
+quantity="$2"
+
+# --- Level 1: Input Validation ---
+if [ "$#" -ne 2 ]; then
+    echo "Usage: buy_widget <username> <quantity>"
+    exit 1
+fi
+
+if ! [[ "$quantity" =~ ^[1-9][0-9]*$ ]]; then
+    echo "Error: quantity must be a positive integer."
+    exit 2
+fi
+
+# --- Level 4: Absolute Paths Setup ---
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+inventory_file="$script_dir/inventory.txt"
+sales_log="$script_dir/sales.log"
+lock_file="$script_dir/inventory.lock"
+STUDENT_ID="p20240046"
+
+# Function to log successful transactions
+log_transaction() {
+    local user="$1"
+    local qty="$2"
+    echo "[$STUDENT_ID] [SUCCESS] $user bought $qty widgets." >> "$sales_log"
+}
+
+# --- Level 4: The Patch (Critical Section with flock) ---
+(
+    flock -x 200
+    
+    # Read current inventory
+    current_inventory=$(cat "$inventory_file")
+    
+    # Check if we have enough widgets
+    if [ "$current_inventory" -ge "$quantity" ]; then
+        # Calculate new inventory and overwrite the file
+        new_inventory=$((current_inventory - quantity))
+        echo "$new_inventory" > "$inventory_file"
+        
+        # Log the successful transaction
+        log_transaction "$username" "$quantity"
+        echo "Success: $username bought $quantity widgets."
+    else
+        # Not enough inventory
+        echo "Transaction Failed: Not enough inventory!"
+        exit 3
+    fi
+    
+) 200> "$lock_file" 

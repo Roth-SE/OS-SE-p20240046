@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# Assign input to normal variables
+operator="$1"
+cycles="$2"
+
+# 1. Check the number of arguments using $#
+if [ "$#" -ne 2 ]; then
+    echo "Usage: quantum_probe <operator> <cycles>"
+    exit 1
+fi
+
+# 2. Reject non-positive or non-integer cycle counts
+# This regex ensures the input starts with 1-9 and only contains digits
+if ! [[ "$cycles" =~ ^[1-9][0-9]*$ ]]; then
+    echo "Error: cycles must be a positive integer."
+    exit 2
+fi
+
+# 3. Create the folder
+mkdir -p probe_logs
+
+# 4. Store the exit status of mkdir using $? and print it
+mkdir_status=$?
+echo "mkdir exit status: $mkdir_status"
+
+# (Optional but good practice) Exit if mkdir failed due to permissions
+if [ "$mkdir_status" -ne 0 ]; then
+    echo "Error: Could not prepare probe_logs."
+    exit 3
+fi
+
+# Print the accepted inputs
+echo "Operator: $operator"
+echo "Cycles requested: $cycles"
+
+# 5. Loop from 1 to the requested cycle count
+for i in $(seq 1 "$cycles"); do
+    echo "Cycle $i: quantum widget console online"
+done
+
+# 6. Exit with status 0 for success
+exit 0

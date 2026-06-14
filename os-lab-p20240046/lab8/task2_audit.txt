@@ -1,0 +1,8 @@
+]633;E;echo 100 > ~/bin/inventory.txt;a3f2e65b-1e9f-4a3f-84df-fcb57cf347b5]633;C=== transaction tests ===
+Success: Alice bought 5 widgets.
+Transaction Failed: Not enough inventory!
+Error: quantity must be a positive integer.
+=== inventory ===
+95
+=== sales.log ===
+[p20240046] [SUCCESS] Alice bought 5 widgets.

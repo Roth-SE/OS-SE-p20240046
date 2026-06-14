@@ -1,0 +1,7 @@
+=== drop zone permissions ===
+drwxrwxrwt 2 server server 4096 Jun 14 22:13 /home/server/vendor_reports
+=== drop zone files ===
+total 4
+-rw-rw-r-- 1 server server 27 Jun 14 22:13 my_rules.txt
+=== partner deletion result ===
+rm: cannot remove '/home/p20240046/vendor_reports/my_rules.txt': Operation not permitted

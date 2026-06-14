@@ -1,0 +1,6 @@
+]633;E;echo "=== missing argument test ===";a3f2e65b-1e9f-4a3f-84df-fcb57cf347b5]633;C=== missing argument test ===
+Usage: buy_widget <username> <quantity>
+=== invalid quantity test ===
+Error: quantity must be a positive integer.
+=== script permissions ===
+-rwxrwxr-x 1 server server 566 Jun 14 17:24 /home/server/bin/buy_widget

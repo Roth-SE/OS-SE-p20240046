@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Loop through all items in the current directory
+for file in *; do
+    # Check if it is a regular file (ignores directories)
+    if [ -f "$file" ]; then
+        
+        # Requirement: Do not move the script itself
+        if [ "$file" == "cleanup" ] || [ "$file" == "$(basename "$0")" ]; then
+            continue
+        fi
+
+        # Extract the extension using parameter expansion (gets everything after the last dot)
+        ext="${file##*.}"
+
+        # Requirement: Ignore files without extensions
+        # If the file has no dot, $ext will equal the whole filename
+        if [ "$ext" != "$file" ] && [ -n "$ext" ]; then
+            # Create the folder named after the extension (e.g., "log", "csv")
+            mkdir -p "$ext"
+            # Move the file into its new folder
+            mv "$file" "$ext/"
+        fi
+    fi
+done
