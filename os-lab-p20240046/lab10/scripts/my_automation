@@ -1,0 +1,9 @@
+#!/bin/bash
+set -euo pipefail
+
+base="$HOME/os-lab-automation"
+logfile="$base/logs/my_automation.log"
+
+# Task: Count files in the project folder
+file_count=$(find "$base/project" -type f | wc -l)
+echo "$(date '+%Y-%m-%d %H:%M:%S') | Project file count: $file_count" >> "$logfile"

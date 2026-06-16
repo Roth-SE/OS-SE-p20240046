@@ -1,0 +1,74 @@
+=== my username ===
+se-song-phengroth
+=== installed cron jobs ===
+# Edit this file to introduce tasks to be run by cron.
+# 
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+# 
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+# 
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+# 
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+# 
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+# Lab10 heartbeat - runs every minute
+* * * * * date '+\%Y-\%m-\%d \%H:\%M:\%S heartbeat' >> $HOME/os-lab-automation/logs/heartbeat.log 2>&1
+# Lab10 GRADED session job - fires once at 2:30 PM on 2026-06-16 (lab session)
+30 14 16 6 * /home/se-song-phengroth/bin/lab_session_job >> /home/se-song-phengroth/os-lab-automation/logs/cron_session_job.log 2>&1
+
+# Lab10 GRADED deadline job - fires once at 2:30 PM on 2026-06-22 (before deadline)
+30 14 22 6 * /home/se-song-phengroth/bin/deadline_job >> /home/se-song-phengroth/os-lab-automation/logs/cron_deadline_job.log 2>&1
+# Lab10 file backup - every 2 minutes (TEST interval)
+*/2 * * * * /home/se-song-phengroth/bin/backup_project >> /home/se-song-phengroth/os-lab-automation/logs/cron_backup.log 2>&1
+=== archives produced by cron ===
+/home/se-song-phengroth/os-lab-automation/backups/project_20260616_133905.tar.gz
+/home/se-song-phengroth/os-lab-automation/backups/project_20260616_133904.tar.gz
+/home/se-song-phengroth/os-lab-automation/backups/project_20260616_133903.tar.gz
+=== backup log (note the new timestamps from cron) ===
+2026-06-16 13:39:02 | starting backup of /home/se-song-phengroth/os-lab-automation/project
+2026-06-16 13:39:02 | created archive /home/se-song-phengroth/os-lab-automation/backups/project_20260616_133901.tar.gz
+2026-06-16 13:39:02 | no old archives to prune
+2026-06-16 13:39:02 | backup finished successfully#!/bin/bash
+2026-06-16 13:39:02 | starting backup of /home/se-song-phengroth/os-lab-automation/project
+2026-06-16 13:39:02 | created archive /home/se-song-phengroth/os-lab-automation/backups/project_20260616_133902.tar.gz
+2026-06-16 13:39:02 | no old archives to prune
+2026-06-16 13:39:02 | backup finished successfully
+2026-06-16 13:39:03 | starting backup of /home/se-song-phengroth/os-lab-automation/project
+2026-06-16 13:39:03 | created archive /home/se-song-phengroth/os-lab-automation/backups/project_20260616_133903.tar.gz
+2026-06-16 13:39:03 | no old archives to prune
+2026-06-16 13:39:03 | backup finished successfully#!/bin/bash
+2026-06-16 13:39:03 | starting backup of /home/se-song-phengroth/os-lab-automation/project
+2026-06-16 13:39:03 | created archive /home/se-song-phengroth/os-lab-automation/backups/project_20260616_133903.tar.gz
+2026-06-16 13:39:03 | no old archives to prune
+2026-06-16 13:39:03 | backup finished successfully
+2026-06-16 13:39:04 | starting backup of /home/se-song-phengroth/os-lab-automation/project
+2026-06-16 13:39:04 | created archive /home/se-song-phengroth/os-lab-automation/backups/project_20260616_133904.tar.gz
+2026-06-16 13:39:04 | pruned old archive /home/se-song-phengroth/os-lab-automation/backups/project_20260616_133901.tar.gz
+2026-06-16 13:39:04 | backup finished successfully#!/bin/bash
+2026-06-16 13:39:04 | starting backup of /home/se-song-phengroth/os-lab-automation/project
+2026-06-16 13:39:04 | created archive /home/se-song-phengroth/os-lab-automation/backups/project_20260616_133904.tar.gz
+2026-06-16 13:39:04 | no old archives to prune
+2026-06-16 13:39:04 | backup finished successfully
+2026-06-16 13:39:05 | starting backup of /home/se-song-phengroth/os-lab-automation/project
+2026-06-16 13:39:05 | created archive /home/se-song-phengroth/os-lab-automation/backups/project_20260616_133905.tar.gz
+2026-06-16 13:39:05 | pruned old archive /home/se-song-phengroth/os-lab-automation/backups/project_20260616_133902.tar.gz
+2026-06-16 13:39:05 | backup finished successfully#!/bin/bash
+2026-06-16 13:39:05 | starting backup of /home/se-song-phengroth/os-lab-automation/project
+2026-06-16 13:39:05 | created archive /home/se-song-phengroth/os-lab-automation/backups/project_20260616_133905.tar.gz
+2026-06-16 13:39:05 | no old archives to prune
+2026-06-16 13:39:05 | backup finished successfully
+=== captured cron output (empty = clean) ===
+(empty)

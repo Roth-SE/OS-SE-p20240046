@@ -1,0 +1,14 @@
+=== my automation script ===
+#!/bin/bash
+set -euo pipefail
+
+base="$HOME/os-lab-automation"
+logfile="$base/logs/my_automation.log"
+
+# Task: Count files in the project folder
+file_count=$(find "$base/project" -type f | wc -l)
+echo "$(date '+%Y-%m-%d %H:%M:%S') | Project file count: $file_count" >> "$logfile"
+=== my cron line ===
+*/2 * * * * /home/se-song-phengroth/bin/my_automation >> /home/se-song-phengroth/os-lab-automation/logs/cron_my_automation.log 2>&1
+=== output produced on schedule ===
+2026-06-16 14:24:29 | Project file count: 4

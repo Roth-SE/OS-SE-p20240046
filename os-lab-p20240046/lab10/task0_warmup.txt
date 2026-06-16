@@ -1,0 +1,11 @@
+=== script permissions ===
+-rwxrwxr-x 1 se-song-phengroth se-song-phengroth 405 Jun 16 13:32 /home/se-song-phengroth/bin/automation_demo
+=== log contents ===
+2026-06-16 13:32:51 | automation_demo started by user se-song-phengroth
+2026-06-16 13:32:51 | working directory is /home/se-song-phengroth/OS-SE-p20240046/os-lab-p20240046/lab10
+2026-06-16 13:32:51 | home directory is /home/se-song-phengroth
+2026-06-16 13:32:51 | automation_demo finished successfully
+2026-06-16 13:32:55 | automation_demo started by user se-song-phengroth
+2026-06-16 13:32:55 | working directory is /home/se-song-phengroth/OS-SE-p20240046/os-lab-p20240046/lab10
+2026-06-16 13:32:55 | home directory is /home/se-song-phengroth
+2026-06-16 13:32:55 | automation_demo finished successfully
