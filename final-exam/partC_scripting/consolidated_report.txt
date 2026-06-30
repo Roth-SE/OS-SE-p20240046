@@ -1,0 +1,3 @@
+--- OrbitWorks Collector Report ---
+Beacon system config ok
+Launch telemetry nominal

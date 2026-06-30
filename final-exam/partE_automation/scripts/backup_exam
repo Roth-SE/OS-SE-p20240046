@@ -1,0 +1,9 @@
+#!/bin/bash
+BACKUP_DIR="$HOME/exam-backups"
+TARGET_DIR="$HOME/OS-SE-p20240046/final-exam"
+mkdir -p "$BACKUP_DIR"
+
+TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+tar -czvf "$BACKUP_DIR/final-exam-$TIMESTAMP.tar.gz" -C "$HOME/OS-SE-p20240046" final-exam
+
+echo "Exam backup completed at $TIMESTAMP"

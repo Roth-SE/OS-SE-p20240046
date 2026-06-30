@@ -1,0 +1,21 @@
+#!/bin/bash
+
+STOCK_FILE="$HOME/OS-SE-p20240046/final-exam/partD_secure/stock.txt"
+LOG_FILE="$HOME/OS-SE-p20240046/final-exam/partD_secure/sales.log"
+
+# Reset stock to 200 and clear log
+echo "200" > "$STOCK_FILE"
+> "$LOG_FILE"
+
+echo "Launching swarm of 50 concurrent buyers..."
+
+# Launch 50 purchases in the background (&)
+for i in {1..50}; do
+    buy_beacon "Bot_$i" 1 &
+done
+
+# Wait for all background jobs to finish
+wait
+
+echo "Swarm finished. Expected stock: 150"
+echo "Actual final stock: $(cat "$STOCK_FILE")"

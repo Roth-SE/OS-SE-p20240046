@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ -z "$1" ]; then
+    echo "Error: Output file required."
+    exit 1
+fi
+echo "Job ran at: $(date +"%Y-%m-%d %H:%M:%S")" >> "$1"

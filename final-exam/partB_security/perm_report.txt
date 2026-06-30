@@ -1,0 +1,18 @@
+drwxrwx--x 2 se-song-phengroth se-song-phengroth 4096 Jun 30 13:54 shared_dir
+-rw------- 1 se-song-phengroth se-song-phengroth 0 Jun 30 13:54 private_file.txt
+  File: shared_dir
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 252,0	Inode: 47349255    Links: 2
+Access: (0771/drwxrwx--x)  Uid: ( 1142/se-song-phengroth)   Gid: ( 1144/se-song-phengroth)
+Access: 2026-06-30 13:55:14.001598220 +0700
+Modify: 2026-06-30 13:54:54.094727450 +0700
+Change: 2026-06-30 13:55:13.444601843 +0700
+ Birth: 2026-06-30 13:54:54.094727450 +0700
+  File: private_file.txt
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 252,0	Inode: 47349258    Links: 1
+Access: (0600/-rw-------)  Uid: ( 1142/se-song-phengroth)   Gid: ( 1144/se-song-phengroth)
+Access: 2026-06-30 13:54:57.560704993 +0700
+Modify: 2026-06-30 13:54:57.560704993 +0700
+Change: 2026-06-30 13:55:09.063630330 +0700
+ Birth: 2026-06-30 13:54:57.560704993 +0700

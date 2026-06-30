@@ -1,0 +1,2 @@
+/home/se-song-phengroth/bin:/home/se-song-phengroth/bin:/home/se-song-phengroth/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+/home/se-song-phengroth/bin/greeter

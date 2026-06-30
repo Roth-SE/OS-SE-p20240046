@@ -1,0 +1,25 @@
+#!/bin/bash
+
+report_file="consolidated_report.txt"
+echo "--- OrbitWorks Collector Report ---" > "$report_file"
+
+# Array of directories to scan
+directories=("scan_dir_1" "scan_dir_2")
+
+for dir in "${directories[@]}"; do
+    if [ -d "$dir" ]; then
+        for file in "$dir"/*; do
+            # Test if file exists (-e) AND is readable (-r) before touching it
+            if [ -e "$file" ] && [ -r "$file" ]; then
+                echo "Reading: $file"
+                cat "$file" >> "$report_file"
+            else
+                echo "Skipped: $file (missing or unreadable)"
+            fi
+        done
+    fi
+done
+
+echo ""
+echo "=== Final Consolidated Report ==="
+cat "$report_file"

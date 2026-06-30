@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Array of messages
+messages=("Welcome back to OrbitWorks!" "All systems nominal." "Beacon launch is approaching." "Have a great shift!")
+
+# Randomly select a message using $RANDOM
+random_index=$((RANDOM % ${#messages[@]}))
+random_message="${messages[$random_index]}"
+
+# Command substitution for logged-in users and uptime
+logged_in_users=$(who | wc -l)
+system_uptime=$(uptime -p)
+
+# Output the dynamic banner
+echo "======================================"
+echo "Hello, $USER!"
+echo "Logged in users: $logged_in_users"
+echo "Uptime: $system_uptime"
+echo "Message of the day: $random_message"
+echo "======================================"

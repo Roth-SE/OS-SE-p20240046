@@ -1,0 +1,13 @@
+se-thai+ 1475633 1450581 1475633  0    1 13:43 pts/15   00:00:00 nano final-exam/partA_threads/thread_demo.c
+se-chhi+ 1476891 1457239 1476891  0    1 13:45 pts/25   00:00:00 nano final-exam/partA_threads/thread_demo.c
+se-lor-+ 1477036 1463839 1477036  0    4 13:45 pts/13   00:00:00 ./thread_demo
+se-lor-+ 1477036 1463839 1477037  0    4 13:45 pts/13   00:00:00 ./thread_demo
+se-lor-+ 1477036 1463839 1477038  0    4 13:45 pts/13   00:00:00 ./thread_demo
+se-lor-+ 1477036 1463839 1477039  0    4 13:45 pts/13   00:00:00 ./thread_demo
+se-song+ 1477177 1456871 1477177  0    6 13:45 pts/10   00:00:00 ./thread_demo
+se-song+ 1477177 1456871 1477178  0    6 13:45 pts/10   00:00:00 ./thread_demo
+se-song+ 1477177 1456871 1477179  0    6 13:45 pts/10   00:00:00 ./thread_demo
+se-song+ 1477177 1456871 1477180  0    6 13:45 pts/10   00:00:00 ./thread_demo
+se-song+ 1477177 1456871 1477181  0    6 13:45 pts/10   00:00:00 ./thread_demo
+se-song+ 1477177 1456871 1477182  0    6 13:45 pts/10   00:00:00 ./thread_demo
+se-song+ 1477284 1472809 1477284  0    1 13:45 pts/39   00:00:00 grep --color=auto thread_demo
