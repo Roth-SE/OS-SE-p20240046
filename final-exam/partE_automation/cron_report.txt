@@ -1,0 +1,64 @@
+--- Crontab Configuration ---
+# Edit this file to introduce tasks to be run by cron.
+# 
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+# 
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+# 
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+# 
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+# 
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+# Lab10 GRADED session job - fires once at 2:30 PM on 2026-06-16 (lab session)
+30 14 16 6 * /home/se-song-phengroth/bin/lab_session_job >> /home/se-song-phengroth/os-lab-automation/logs/cron_session_job.log 2>&1
+
+# Lab10 GRADED deadline job - fires once at 2:30 PM on 2026-06-22 (before deadline)
+30 14 22 6 * /home/se-song-phengroth/bin/deadline_job >> /home/se-song-phengroth/os-lab-automation/logs/cron_deadline_job.log 2>&1
+# E2: Recurring every 1 minute
+* * * * * $HOME/bin/timed_job $HOME/OS-SE-p20240046/final-exam/partE_automation/logs/cron_recurring.log
+
+# E2: One-shot at exactly 14:35 today
+35 14 * * * $HOME/bin/timed_job $HOME/OS-SE-p20240046/final-exam/partE_automation/logs/cron_oneshot.log
+
+# E3: Exam backup on a short interval (every 2 minutes)
+*/2 * * * * $HOME/bin/backup_exam >/dev/null 2>&1
+
+# E3: Exam backup once at exactly 16:00 today
+0 16 * * * $HOME/bin/backup_exam >/dev/null 2>&1
+
+--- Recurring Log (E2) ---
+Job ran at: 2026-06-30 14:17:01
+Job ran at: 2026-06-30 14:18:01
+Job ran at: 2026-06-30 14:19:01
+Job ran at: 2026-06-30 14:20:01
+Job ran at: 2026-06-30 14:21:01
+Job ran at: 2026-06-30 14:22:01
+Job ran at: 2026-06-30 14:23:01
+Job ran at: 2026-06-30 14:24:01
+Job ran at: 2026-06-30 14:25:01
+Job ran at: 2026-06-30 14:26:01
+Job ran at: 2026-06-30 14:27:01
+Job ran at: 2026-06-30 14:28:01
+Job ran at: 2026-06-30 14:29:02
+Job ran at: 2026-06-30 14:30:01
+Job ran at: 2026-06-30 14:31:01
+Job ran at: 2026-06-30 14:32:01
+Job ran at: 2026-06-30 14:33:01
+Job ran at: 2026-06-30 14:34:01
+Job ran at: 2026-06-30 14:35:01
+
+--- One-Shot Log (14:35) (E2) ---
+Job ran at: 2026-06-30 14:35:01

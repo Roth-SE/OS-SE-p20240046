@@ -1,25 +1,17 @@
 #!/bin/bash
-
-# Anchored file paths
-STOCK_FILE="$HOME/OS-SE-p20240046/final-exam/partD_secure/stock.txt"
-LOG_FILE="$HOME/OS-SE-p20240046/final-exam/partD_secure/sales.log"
-LOCK_FILE="$HOME/OS-SE-p20240046/final-exam/partD_secure/stock.lock"
-
-# Input validation
-if [ -z "$1" ] || ! [[ "$2" =~ ^[1-9][0-9]*$ ]]; then
-    echo "Error: Invalid input. Usage: buy_beacon <buyer_name> <quantity>"
+if [ -z "$1" ]; then
+    echo "Error: Output file required."
     exit 1
 fi
 
-# -- CRITICAL SECTION (PATCHED WITH FLOCK) --
-(
-    flock -x 200
-    
-    current_stock=$(cat "$STOCK_FILE" 2>/dev/null || echo 200)
-    sleep 0.05 
-    new_stock=$((current_stock - $2))
-    
-    echo "$new_stock" > "$STOCK_FILE"
-    echo "Buyer $1 bought $2. Student ID: p20240046" >> "$LOG_FILE"
-    
-) 200> "$LOCK_FILE"
+TODAY=$(date +"%Y-%m-%d")
+TOKEN="ONCEKEY"
+
+# CURVEBALL: Idempotent check
+if grep -q "${TODAY}.*${TOKEN}" "$1" 2>/dev/null; then
+    echo "Skipping: Token ${TOKEN} already found for ${TODAY}."
+    exit 0
+fi
+
+echo "Job ran at: $(date +"%Y-%m-%d %H:%M:%S") | Token: ${TOKEN}" >> "$1"
+echo "Job executed successfully."
